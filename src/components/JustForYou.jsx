@@ -78,3 +78,11 @@ const JustForYou = () => {
 }
 
 export default JustForYou
+
+
+git init
+git add README.md
+git commit - m "first commit"
+git branch - M main
+git remote add origin https://github.com/Sayon2001/daraz-clone.git
+git push - u origin main
