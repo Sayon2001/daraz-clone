@@ -6,12 +6,14 @@ const JustForYou = () => {
         image: "https://img.drz.lazcdn.com/g/kf/S8e231ddd1b654223a5986ae7191553daM.jpg_400x400q80.jpg_.webp",
         title: 'OZ Naturals Vitamin C Facial Serum With Hyaluronic Acid & Vitamin E -30ml/By Baisnabi Cosmetics',
         price: 300,
-        discount: '5%'
+        discount: '5%',
+        star: 4
     }, {
         image: "https://img.drz.lazcdn.com/static/np/p/14450f357872cc1db3ca89b1a23d9aaa.jpg_400x400q80.jpg_.webp",
         title: 'LCD Writing Tab 8.5 Inch With Pen Writing Pad',
         price: 350,
-        discount: '61%'
+        discount: '61%',
+        star: 3.5
     }, {
         image: "https://img.drz.lazcdn.com/static/np/p/d0b5a4c58a4a9620e4c926bb2930115c.jpg_400x400q80.jpg_.webp",
         title: '3D Decor Crystal Ball LED Night Light',

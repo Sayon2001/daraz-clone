@@ -10,3 +10,8 @@ body {
 .footerlogo img {
     width: 2.5rem;
 }
+
+#menu1 li:hover {
+    color: #b0a9a9;
+    cursor: pointer;
+}
