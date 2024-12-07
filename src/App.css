@@ -1,3 +1,12 @@
-body{
+body {
     background-color: #F5F5F5;
+}
+
+.footer li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.footerlogo img {
+    width: 2.5rem;
 }

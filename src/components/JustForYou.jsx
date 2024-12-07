@@ -70,19 +70,11 @@ const JustForYou = () => {
             <div className='grid grid-cols-6 bg-white mt-4'>
                 <Card product={data} />
             </div>
-            <div className='flex justify-center'>
-                <button className='text-xl font-normal w-[20vw]  border-2 border-blue-500'>LOAD MORE</button>
+            <div className='flex justify-center mt-6'>
+                <button className='text-xl font-normal w-[20vw] text-[#1A9CB8] border-2 border-[#1A9CB8]'>LOAD MORE</button>
             </div>
         </div>
     )
 }
 
 export default JustForYou
-
-
-git init
-git add README.md
-git commit - m "first commit"
-git branch - M main
-git remote add origin https://github.com/Sayon2001/daraz-clone.git
-git push - u origin main

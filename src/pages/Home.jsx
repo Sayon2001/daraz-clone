@@ -4,11 +4,11 @@ import DownloadCard from '../components/DownloadCard'
 import FlashSale from '../components/FlashSale'
 import Categories from '../components/Categories'
 import JustForYou from '../components/JustForYou'
+import Footer from '../components/Footer'
 
 const Home = () => {
     return (
         <>
-
 
             <div className='mx-40 w-[76rem] h-[22rem] flex gap-2'>
                 <SimpleSlider />
@@ -22,6 +22,9 @@ const Home = () => {
             </div>
             <div className="mx-40 mt-6">
                 <JustForYou />
+            </div>
+            <div className="mt-6">
+                <Footer />
             </div>
 
         </>

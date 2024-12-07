@@ -15,7 +15,7 @@ const Card = ({ product }) => {
                                 <p className='text-lg text-[#F57224] font-semibold'>Rs. {item.price - (parseInt(item.discount) * (item.price)) / 100}</p>
                                 <div className='flex gap-1 text-xs text-semibold'>
                                     <p className='line-through'>{item.price}</p>
-                                    <p>{item.discount}</p>
+                                    <p>-{item.discount}</p>
                                 </div>
                             </div>
                         </div>
