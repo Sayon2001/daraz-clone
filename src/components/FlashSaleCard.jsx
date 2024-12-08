@@ -31,18 +31,18 @@ const Card = ({ product }) => {
                                         <span className='text-lg text-[#F57224] font-semibold'>Rs. {item.price - (parseInt(item.discount) * (item.price)) / 100}</span>
                                         {
                                             item.star &&
-                                            <span>-{item.discount}</span>
+                                            <span className='text-xs ml-1'>-{item.discount}</span>
 
                                         }
                                         {
                                             item.star ?
-                                                <div className='flex'>
+                                                <div className='flex text-xs'>
                                                     {fullStar} {emptyStar}
                                                 </div>
                                                 :
                                                 <div className='flex gap-1 text-xs text-semibold'>
                                                     <span className='line-through text-[#808080]'>{item.price}</span>
-                                                    <span>-{item.discount}</span>
+                                                    <span className='text-xs'>-{item.discount}</span>
                                                 </div>
                                         }
                                     </div>

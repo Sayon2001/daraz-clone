@@ -7,6 +7,14 @@ import p4 from '../assets/images/p4.jpg'
 import p5 from '../assets/images/p5.jpg'
 import p6 from '../assets/images/p6.jpg'
 import { FaRegStar, FaStar } from "react-icons/fa";
+import { CiCircleInfo, CiLocationOn, CiMobile1 } from "react-icons/ci";
+import { MdOutlineDeliveryDining } from "react-icons/md";
+import { GiMoneyStack } from "react-icons/gi";
+import { TbNumber14Small } from "react-icons/tb";
+import { IoBanOutline } from "react-icons/io5";
+import DownloadQr from '../assets/images/downloadQr.jpg'
+import DarazLogo from '../assets/images/darazfooterimg.png'
+
 
 const SingleProduct = () => {
     const { id } = useParams();
@@ -139,7 +147,7 @@ const SingleProduct = () => {
         }
     ]
     return (
-        <div className='bg-white mx-40 mt-10 border-2 border-black w-[1188px] h-[780px]'>
+        <div className='bg-white mx-40 mt-10 w-[1188px] '>
             {
                 data.map((item, index) => {
 
@@ -155,28 +163,108 @@ const SingleProduct = () => {
                         }
 
                         return (
-                            <div key={index} className='flex'>
-                                <div>
+                            <div key={index} className='flex gap-2 justify-between'>
+                                <div className='p-2'>
                                     <img src={item.image} alt="" />
                                 </div>
-                                <div>
-                                    <h3 className='text-semibold text-lg'>{item.title}</h3>
-                                    <div className='leading-3'>
+                                <div className='p-2 w-[34rem]'>
+                                    <h3 className='text-semibold text-2xl '>{item.title}</h3>
+                                    <div>
                                         {
                                             item.star &&
-                                            <div className='flex'>
+                                            <div className='flex my-6'>
                                                 {fullStar} {emptyStar}
                                             </div>
                                         }
-                                        <span className='text-lg text-[#F57224] font-semibold'>Rs. {item.price - (parseInt(item.discount) * (item.price)) / 100}</span>
-                                        <div className='flex gap-1 text-xs text-semibold'>
-                                            <span className='line-through text-[#808080]'>{item.price}</span>
-                                            <span>-{item.discount}</span>
+                                        <hr />
+                                        <div className='my-6'>
+                                            <span className='text-4xl text-[#F57224] font-semibold'>Rs. {item.price - (parseInt(item.discount) * (item.price)) / 100}</span>
+                                            <div className='flex gap-1 text-sm text-semibold'>
+                                                <span className='line-through text-[#A6A6A6]'>Rs. {item.price}</span>
+                                                <span>-{item.discount}</span>
 
+                                            </div>
+                                        </div>
+                                        <hr />
+                                        <div className='flex gap-4 mt-6'>
+                                            <p className='text-[#757575] text-lg'>Color Family</p>
+                                            <button className='border-2 border-[#A6A6A6] p-1 rounded-sm hover:bg-[#f5f5f5]'>Black</button>
+                                        </div>
+                                        <div className='flex gap-4 mt-6'>
+                                            <p className='text-[#757575] text-lg'>Quantity</p>
+                                            <div className='flex gap-3 items-center'>
+                                                <button className='border-2 border-[#f5f5f5] p-1 text-lg font-semibold w-[2rem] bg-[#EFF0F5]'>-</button>
+                                                <p>1</p>
+                                                <button className='border-2 border-[#f5f5f5] p-1 text-lg font-semibold w-[2rem] bg-[#EFF0F5]'>+</button>
+                                            </div>
+                                        </div>
+                                        <div className='mt-6 flex gap-2 mb-4'>
+                                            <button className='bg-[#2ABBE8] text-white p-2 w-48 cursor-pointer hover:bg-[#4aa9c7]'>Buy Now</button>
+                                            <button className='bg-[#F57224] text-white p-2 w-48 cursor-pointer hover:bg-[#d97e49]'>Add to Cart</button>
                                         </div>
 
                                     </div>
                                 </div>
+                                <div className='bg-[#f5f5f5] w-[330px]'>
+                                    <div className='p-2'>
+
+                                        <div className='flex justify-between'>
+                                            <p className='text-xs font-bold text-[#797979]'>Delivery Options</p>
+                                            <CiCircleInfo />
+                                        </div>
+                                        <div className='flex gap-4 mt-2'>
+                                            <div className='flex items-center gap-2'>
+                                                <p className='text-2xl text-[#9A9A9A]'><CiLocationOn /></p>
+                                                <p className='text-sm text-[#2D2D2D] font-semibold'>Bagmati,kathmandu Metro 22 - Newroad Area, Newroad</p>
+                                            </div>
+                                            <button className='text-[#4C8FFD] text-sm'>CHANGE</button>
+                                        </div>
+                                        <hr className='mt-2' />
+                                        <div className='flex gap-4 items-center mt-2'>
+                                            <div className='flex gap-2'>
+                                                <p className='text-2xl text-[#9A9A9A]'><MdOutlineDeliveryDining /></p>
+                                                <div>
+                                                    <p className='text-sm font-semibold text-[#2D2D2D]'>Standard Delivery</p>
+                                                    <p className='text-xs text-[#2D2D2D]'>Guaranteed by 11-15 Dec</p>
+                                                </div>
+                                            </div>
+                                            <p className='ml-12'>Rs.70</p>
+                                        </div>
+                                        <div className='flex gap-2 mt-4'>
+                                            <p className='text-2xl text-[#9A9A9A]'><GiMoneyStack /></p>
+                                            <p className='text-sm font-semibold text-[#2D2D2D]'>Cash on Delivery Available</p>
+                                        </div>
+                                        <hr className='mt-2' />
+                                        <div>
+                                            <div className='flex justify-between items-center mt-2'>
+                                                <p className='text-xs font-bold text-[#797979]'>Return & Warranty</p>
+                                                <CiCircleInfo />
+                                            </div>
+                                            <div className='flex gap-2 mt-4'>
+                                                <p className='text-2xl text-[#9A9A9A]'><TbNumber14Small /></p>
+                                                <p className='text-sm font-semibold text-[#2D2D2D]'>14 Days Free Returns</p>
+                                            </div>
+                                            <div className='flex gap-2 mt-6'>
+                                                <p className='text-2xl text-[#9A9A9A]'><IoBanOutline /></p>
+                                                <p className='text-sm font-semibold text-[#2D2D2D]' >Warranty not available</p>
+                                            </div>
+                                            <hr className='mt-2' />
+                                            <div className='mt-2 flex gap-2'>
+                                                <img className='w-[6rem]' src={DownloadQr} alt="" />
+                                                <div className='flex flex-col justify-center gap-2 bg-white rounded-md p-2 w-[14rem] text-[#B3B3B3]'>
+                                                    <img className='w-[2rem]' src={DarazLogo} alt="" />
+                                                    <p className='text-xs'>Download App to enjoy
+                                                        <br />exclusive discounts!</p>
+                                                </div>
+                                            </div>
+                                            <div className='flex gap-1 items-center'>
+                                                <p><CiMobile1 /></p>
+                                                <p className='text-[0.6rem]'>Scan with Mobile</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                         )
                     }

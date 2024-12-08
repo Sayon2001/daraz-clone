@@ -3,6 +3,7 @@ import { CiSearch } from "react-icons/ci";
 import { IoCartOutline } from 'react-icons/io5';
 import Logo from '../assets/images/logo.png'
 import '../App.css'
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
     return (
@@ -19,7 +20,7 @@ const NavBar = () => {
                 </div>
                 <nav className='flex gap-40 items-center h-[75px] mx-40 '>
                     <div className='w-[127px] h-[40px]'>
-                        <img src={Logo} alt="Logo" />
+                        <Link to={'/'}><img src={Logo} alt="Logo" /></Link>
                     </div>
                     <div className='flex relative'>
                         <input className='w-[43rem] h-[2.8rem] p-4' type="search" name="search-bar" id="search-bar" placeholder="Search in Daraz" />
