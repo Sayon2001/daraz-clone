@@ -8,6 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom'
 import Home from './pages/Home'
 import NotFound from './pages/NotFound'
+import SingleProduct from './components/SingleProduct'
 
 function App() {
 
@@ -27,6 +28,9 @@ function App() {
       children: [{
         path: '/',
         element: <Home />
+      }, {
+        path: '/singleProduct/:id',
+        element: <SingleProduct />
       }]
     },
     {

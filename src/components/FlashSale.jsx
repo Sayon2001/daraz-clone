@@ -10,36 +10,42 @@ import FlashSaleCard from './FlashSaleCard'
 const FlashSale = () => {
     const data = [
         {
+            id: 1,
             title: 'Winter Stockings',
             image: p1,
             price: '1000',
             discount: '10%',
         },
         {
+            id: 2,
             title: 'Heel Protector',
             image: p2,
             price: '1500',
             discount: '5%',
         },
         {
+            id: 3,
             title: 'Pei Mei Skincare Vitamin C Serum',
             image: p3,
             price: '1500',
             discount: '15%',
         },
         {
+            id: 4,
             title: 'HoneyComb Stainless Steel Knife Net',
             image: p4,
             price: '2000',
             discount: '12%',
         },
         {
+            id: 5,
             title: 'Premium Kojic Acid Lightining Soap',
             image: p5,
             price: '500',
             discount: '15%',
         },
         {
+            id: 6,
             title: '12 Packets Millet Biscuits',
             image: p6,
             price: '800',
