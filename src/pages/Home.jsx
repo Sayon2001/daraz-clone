@@ -23,9 +23,6 @@ const Home = () => {
             <div className="mx-40 mt-6">
                 <JustForYou />
             </div>
-            <div className="mt-6">
-                <Footer />
-            </div>
 
         </>
     )

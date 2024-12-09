@@ -8,7 +8,8 @@ import "slick-carousel/slick/slick-theme.css";
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom'
 import Home from './pages/Home'
 import NotFound from './pages/NotFound'
-import SingleProduct from './components/SingleProduct'
+import SingleProduct from './pages/SingleProduct'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
       <>
         <NavBar />
         <Outlet />
+        <Footer />
       </>
     )
   }

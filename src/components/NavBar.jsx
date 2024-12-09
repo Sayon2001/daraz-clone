@@ -23,8 +23,8 @@ const NavBar = () => {
                         <Link to={'/'}><img src={Logo} alt="Logo" /></Link>
                     </div>
                     <div className='flex relative'>
-                        <input className='w-[43rem] h-[2.8rem] p-4' type="search" name="search-bar" id="search-bar" placeholder="Search in Daraz" />
-                        <div className='w-[45px] h-[45px] grid place-items-center text-2xl bg-[#FFE1D2] absolute right-12 top-0'>
+                        <input className='w-[43rem] h-[2.8rem] p-4 outline-none' type="search" name="search-bar" id="search-bar" placeholder="Search in Daraz" />
+                        <div className='w-[45px] h-[45px] grid place-items-center text-2xl bg-[#FFE1D2] absolute right-12 top-0 cursor-pointer'>
                             <CiSearch className='cursor-pointer text-[#FF5D06]' />
                         </div>
                         <div className=' text-white text-4xl grid place-items-center ml-6 cursor-pointer'>
