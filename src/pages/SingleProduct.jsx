@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import p1 from '../assets/images/p1.jpg'
 import p2 from '../assets/images/p2.jpg'
@@ -17,6 +17,11 @@ import DarazLogo from '../assets/images/darazfooterimg.png'
 
 
 const SingleProduct = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
+
     const { id } = useParams();
     const data = [
         {

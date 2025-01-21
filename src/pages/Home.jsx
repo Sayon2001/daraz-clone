@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import SimpleSlider from '../components/SimpleSlider'
 import DownloadCard from '../components/DownloadCard'
 import FlashSale from '../components/FlashSale'
@@ -7,6 +7,11 @@ import JustForYou from '../components/JustForYou'
 import Footer from '../components/Footer'
 
 const Home = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
+
     return (
         <>
 
