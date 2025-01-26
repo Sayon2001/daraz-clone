@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 const NavBar = () => {
     return (
         <>
-            <div className=' bg-[#F85606] h-32 w-full' id='menu1'>
+            <div className='bg-[#F85606] h-32 w-full' id='menu1'>
                 <div className='mx-40'>
                     <ul className=' h-6 flex justify-end gap-5 text-white text-xs items-center font-semibold'>
                         <li>SAVE MORE ON APP</li>
@@ -18,7 +18,7 @@ const NavBar = () => {
                         <li>SIGN UP</li>
                     </ul>
                 </div>
-                <nav className='flex gap-40 items-center h-[75px] mx-40 '>
+                <nav className='flex gap-40 items-center h-[75px] mx-40'>
                     <div className='w-[127px] h-[40px]'>
                         <Link to={'/'}><img src={Logo} alt="Logo" /></Link>
                     </div>
